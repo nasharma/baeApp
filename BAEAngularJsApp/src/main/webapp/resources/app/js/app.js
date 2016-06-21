@@ -1,1 +1,1 @@
-angular.module('BAEApp', [ 'BAEApp.controllers', 'BAEApp.services' , 'BAEApp.utils', 'uiGmapgoogle-maps' ]);
+angular.module('BAEApp', [ 'BAEApp.controllers', 'BAEApp.services' , 'BAEApp.utils', 'BAEApp.maps' ]);

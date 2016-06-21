@@ -20,8 +20,25 @@ angular.module('BAEApp.utils', []).factory(
 				}
 				
 				return countryList;
-
 			}
 
+			filterAddress.groupByCity = function(address){
+				return address;
+			}
+			
+			filterAddress.getCityList = function(addresses) {
+				var cityList = [];
+
+				for (var i = 0; i < addresses.length; i++) {
+					var isCityNotAlreadyAdded = cityList
+							.indexOf(addresses[i].city) == -1;
+					if (isCityNotAlreadyAdded) {
+						cityList.push(addresses[i].city);
+					}
+				}
+				
+				return cityList;
+			}
+			
 			return filterAddress;
 		});
