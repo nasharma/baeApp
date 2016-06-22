@@ -4,9 +4,6 @@ angular.module('BAEApp.utils', []).factory(
 
 			var filterAddress = {};
 
-			filterAddress.groupByCountry = function(address) {
-				return address;
-			}
 
 			filterAddress.getCountryList = function(addresses) {
 				var countryList = [];
@@ -20,10 +17,6 @@ angular.module('BAEApp.utils', []).factory(
 				}
 				
 				return countryList;
-			}
-
-			filterAddress.groupByCity = function(address){
-				return address;
 			}
 			
 			filterAddress.getCityList = function(addresses) {

@@ -5,9 +5,9 @@ angular.module('BAEApp.controllers', []).controller('addressController',
 			addressService.getAddress().success(function(response) {
 				$scope.addresses = response;
 				$scope.countryList = filter.getCountryList(response);
-				$scope.addressByCountry = filter.groupByCountry(response);
+				$scope.addressByCountry = response;
 				$scope.cityList = filter.getCityList(response);
-				$scope.addressByCity = filter.groupByCity(response);
+				$scope.addressByCity = response;
 				$scope.selectedAddress = JSON.stringify(response[0]);
 				$scope.selectedAddressObj = response[0];
 			});
